@@ -6,6 +6,7 @@ let div = document.createElement("div")
 
 let img = document.createElement("img")
 
+img.style.width = "100%";
 img.src = newsdata.urlToImage;
 
 let publishedAt = document.createElement("h4")
