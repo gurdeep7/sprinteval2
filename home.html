@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    #popularnews{
+        background-color: lightcyan;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+    #search{
+        float: right;
+    }
+</style>
+<body>
+    <div id="search">
+        <button onclick="location.href = 'search.html'">Search news</button>
+    </div>
+    <h1>Top Stories</h1>
+
+    <div id= "popularnews"></div>
+</body>
+</html>
+<script src= "scripts/home.js"></script>

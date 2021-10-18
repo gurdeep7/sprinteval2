@@ -1,0 +1,52 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+ <style>
+     #sea{
+         width: fit-content;
+         margin:auto;
+     }
+     #search_results{
+         width: 300px;
+         height: 100px;
+         background-color: lightblue;
+         overflow: auto;
+         position: absolute;
+        display: none;
+     }
+     input{
+         width: 300px;
+         height: 40px;
+     }
+     button{
+         height: 44px;
+     }
+     #grid{
+        background-color: lightcyan;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;  
+     }
+     #selectednews{
+        background-color: lightblue;
+        width: 70%;
+        margin: auto;
+        margin-top: 20px;
+     }
+ </style>
+ <body>
+     <div id="sea">
+         <input type="text" id="value" placeholder="search" oninput="debounce(main,1000)">
+         <button onclick="search()">Search</button>
+         <div id="search_results"></div>
+     </div>
+     <div id="selectednews"></div>
+     <div id="grid"></div>
+ </body>
+ </html>
+ <script src = "scripts/search.js"></script>
